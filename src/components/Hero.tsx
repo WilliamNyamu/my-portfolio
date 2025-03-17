@@ -25,7 +25,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Full-Stack Developer
+              Near Full-Stack Developer
             </motion.div>
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance"
@@ -80,7 +80,7 @@ const Hero = () => {
             transition={{ delay: 0.7 }}
           >
             <a 
-              href="https://github.com" 
+              href="https://github.com/WilliamNyamu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-foreground transition-colors"
@@ -88,7 +88,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/william-nyamu-kiura/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-foreground transition-colors"
@@ -96,7 +96,7 @@ const Hero = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:billyliam08@gmail.com"
               className="text-foreground/60 hover:text-foreground transition-colors"
             >
               <Mail size={20} />

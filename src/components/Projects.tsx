@@ -2,30 +2,33 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import Resiato from "@/assets/Resiato.jpg";
+import lkccu from "@/assets/lkccu.jpg"
+import reverse from "@/assets/reverse.jpg"
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with cart functionality, payment processing, and admin dashboard.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      title: "A Church Fundraising Platform",
+      description: "A fundraising platform with personalized card generation and other functionalities",
+      tags: ["React", "Node.js", "TailwindCSS", "MPesa API"],
+      image: lkccu,
       repoUrl: "https://github.com",
-      liveUrl: "#",
+      liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
     },
     {
-      title: "Task Management System",
-      description: "A collaborative project management tool with real-time updates and team collaboration features.",
-      tags: ["TypeScript", "React", "Express", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+      title: "A Student Leadership Campaign Website",
+      description: "A stunning and elegant website for an aspiring student leader",
+      tags: ["TypeScript", "React", "Vite", "TailwindCSS"],
+      image: Resiato,
       repoUrl: "https://github.com",
-      liveUrl: "#",
+      liveUrl: "https://governor-tammary-resiato.netlify.app/",
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts and interactive visualizations.",
-      tags: ["JavaScript", "APIs", "Chart.js", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      title: "A Discipleship Platform",
+      description: "A AI-integrated and gamified christian discipleship platform.",
+      tags: ["TypeScript", "APIs", "PostgreSQL", "Tailwind CSS", "Next.js"],
+      image: reverse,
       repoUrl: "https://github.com",
       liveUrl: "#",
     },
@@ -57,7 +60,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-foreground/80 max-w-2xl mx-auto">
-            Explore some of my recent work. Each project represents a unique challenge and solution.
+            <span className="font-semibold">Explore some of my most recent work.</span> Each project represents a unique challenge and solution.
           </p>
         </motion.div>
 

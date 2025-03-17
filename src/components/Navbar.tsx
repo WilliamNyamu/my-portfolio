@@ -48,7 +48,7 @@ const Navbar = () => {
           }}
           className="text-xl font-bold text-gradient-blue"
         >
-          dev<span className="text-foreground">folio</span>
+          Dev<span className="text-foreground">Nyamu</span>
         </a>
         
         {/* Desktop Navigation */}

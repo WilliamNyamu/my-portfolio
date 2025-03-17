@@ -1,13 +1,14 @@
 
 import { motion } from "framer-motion";
 import { Code, Layout, Database, Terminal } from "lucide-react";
+import William from "@/assets/me.jpg";
 
 const About = () => {
   const skills = [
-    { name: "Frontend Development", icon: <Layout className="w-5 h-5" />, description: "Crafting responsive and intuitive interfaces with React, Vue, and modern CSS" },
-    { name: "Backend Development", icon: <Database className="w-5 h-5" />, description: "Building robust APIs and services using Node.js, Express, and MongoDB" },
+    { name: "Frontend Development", icon: <Layout className="w-5 h-5" />, description: "Crafting responsive and intuitive interfaces with React, Vite, and tailwind CSS" },
+    { name: "Backend Development [In progress]", icon: <Database className="w-5 h-5" />, description: "Building robust services using Django, PostGreSql" },
     { name: "Web Design", icon: <Code className="w-5 h-5" />, description: "Creating beautiful, accessible, and performance-focused web experiences" },
-    { name: "DevOps", icon: <Terminal className="w-5 h-5" />, description: "Setting up CI/CD pipelines and deploying applications to cloud platforms" },
+    { name: "Generative AI", icon: <Terminal className="w-5 h-5" />, description: "Skilled in prompt engineering, effectively making the best use of the open-sourced AI services" },
   ];
 
   const fadeInUpVariants = {
@@ -48,24 +49,24 @@ const About = () => {
             <h3 className="text-2xl font-bold">Who am I</h3>
             <p className="text-foreground/80">
               I'm a passionate full-stack developer with a strong focus on creating 
-              clean, efficient, and user-friendly applications. With 5+ years of 
-              experience in web development, I've worked on a diverse range of projects 
-              from e-commerce platforms to real-time analytics dashboards.
+              clean, efficient, and user-friendly applications. With 1+ years 
+              in web development, I've worked on a diverse range of projects 
+              from Single Page Applications to Full Web Applications.
             </p>
             <p className="text-foreground/80">
               My approach combines technical expertise with an eye for design, ensuring 
               that the applications I build are not only functional but also visually 
               appealing and intuitive to use. I'm constantly learning and exploring new 
-              technologies to stay at the forefront of web development.
+              technologies to stay at the forefront of web development and AI development.
             </p>
             
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="text-center p-3 bg-secondary/50 rounded-lg">
-                <span className="block text-3xl font-bold text-primary">5+</span>
+                <span className="block text-3xl font-bold text-primary">1+</span>
                 <span className="text-sm text-foreground/80">Years Experience</span>
               </div>
               <div className="text-center p-3 bg-secondary/50 rounded-lg">
-                <span className="block text-3xl font-bold text-primary">40+</span>
+                <span className="block text-3xl font-bold text-primary">15+</span>
                 <span className="text-sm text-foreground/80">Projects Completed</span>
               </div>
             </div>
@@ -81,9 +82,10 @@ const About = () => {
             <div className="glass-panel rounded-2xl p-4 relative z-10">
               <div className="aspect-square rounded-lg overflow-hidden bg-secondary/50">
                 <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-                  alt="Developer coding" 
-                  className="w-full h-full object-cover"
+                  src= {William} 
+                  alt="William Nyamu" 
+                  className="w-full h-full object-fit"
+                  style={{ objectPosition: "center", objectFit: "cover" }}
                   loading="lazy"
                 />
               </div>
@@ -135,16 +137,16 @@ const About = () => {
             <div className="marquee-container py-4 overflow-hidden">
               <div className="marquee-content inline-flex space-x-8">
                 {[
-                  "JavaScript", "TypeScript", "React", "Node.js", "Express", "MongoDB",
-                  "HTML5", "CSS3", "Tailwind CSS", "Git", "Docker", "AWS",
-                  "Redux", "GraphQL", "Next.js", "PostgreSQL"
+                  "JavaScript", "TypeScript", "React", "Node.js",
+                  "HTML5", "Django", "Tailwind CSS", "Git", 
+                  "Python",  "Next.js", "Kotlin", "Android Development"
                 ].map((tech, index) => (
                   <span key={index} className="text-sm font-mono bg-secondary/50 px-3 py-1 rounded-md">{tech}</span>
                 ))}
                 {[
-                  "JavaScript", "TypeScript", "React", "Node.js", "Express", "MongoDB",
-                  "HTML5", "CSS3", "Tailwind CSS", "Git", "Docker", "AWS",
-                  "Redux", "GraphQL", "Next.js", "PostgreSQL"
+                  "JavaScript", "TypeScript", "React", "Node.js",
+                  "HTML5", "Django", "Tailwind CSS", "Git", 
+                  "Python",  "Next.js", "Kotlin", "Android Development"
                 ].map((tech, index) => (
                   <span key={`dup-${index}`} className="text-sm font-mono bg-secondary/50 px-3 py-1 rounded-md">{tech}</span>
                 ))}
