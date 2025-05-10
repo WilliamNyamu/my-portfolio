@@ -113,7 +113,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="mailto:contact@example.com"
+            href="mailto:billyliam08@gmail.com"
             className="mt-4 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary text-center rounded-md border border-primary/30"
           >
             Get In Touch
