@@ -2,35 +2,43 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import Resiato from "@/assets/Resiato.jpg";
-import lkccu from "@/assets/lkccu.jpg"
-import reverse from "@/assets/reverse.jpg"
+import lkccu from "@/assets/lkccu.jpg";
+import reverse from "@/assets/reverse.jpg";
+import me from "@/assets/me.jpg";
+import William from "@/assets/William.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "A Church Fundraising Platform",
-      description: "A fundraising platform with personalized card generation and other functionalities",
-      tags: ["React", "Node.js", "TailwindCSS", "MPesa API"],
-      image: lkccu,
-      repoUrl: "https://github.com",
+      title: "Church Fundraising Platform",
+      description: "A comprehensive fundraising platform featuring personalized card generation, donation tracking, and community engagement tools for churches and religious organizations.",
+      tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "MongoDB"],
+      images: [lkccu, me, William], // Multiple screenshots
+      repoUrl: "https://github.com/WilliamNyamu/church-fundraiser",
       liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
+      status: "Live"
     },
     {
-      title: "A Student Leadership Campaign Website",
-      description: "A stunning and elegant website for an aspiring student leader",
-      tags: ["TypeScript", "React", "Vite", "TailwindCSS"],
-      image: Resiato,
-      repoUrl: "https://github.com",
+      title: "Student Leadership Campaign Website",
+      description: "An elegant and responsive campaign website designed for student leadership elections, featuring interactive elements and modern design principles.",
+      tags: ["TypeScript", "React", "Vite", "TailwindCSS", "Framer Motion"],
+      images: [Resiato, William, me], // Multiple screenshots
+      repoUrl: "https://github.com/WilliamNyamu/governor-resiato",
       liveUrl: "https://governor-tammary-resiato.netlify.app/",
+      status: "Live"
     },
     {
-      title: "A Discipleship Platform",
-      description: "A AI-integrated and gamified christian discipleship platform.",
-      tags: ["TypeScript", "APIs", "PostgreSQL", "Tailwind CSS", "Next.js"],
-      image: reverse,
-      repoUrl: "https://github.com",
+      title: "AI-Powered Discipleship Platform",
+      description: "An innovative Christian discipleship platform integrating AI capabilities with gamification elements to enhance spiritual growth and community engagement.",
+      tags: ["TypeScript", "Next.js", "PostgreSQL", "OpenAI API", "TailwindCSS", "Prisma"],
+      images: [reverse, lkccu, Resiato], // Multiple screenshots
+      repoUrl: "https://github.com/WilliamNyamu/discipleship-platform",
       liveUrl: "#",
+      status: "In Development"
     },
   ];
 
@@ -64,60 +72,133 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="projects-grid">
+        <div className="space-y-12">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="project-card"
+              className="group"
               variants={fadeInUpVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
               custom={index}
             >
-              <Card className="h-full overflow-hidden bg-secondary/30 border border-white/5 hover:border-primary/30 transition-all">
-                <div className="aspect-video overflow-hidden bg-secondary/50">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
-                  <CardDescription className="text-foreground/70">{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span 
-                        key={tagIndex} 
-                        className="text-xs font-mono bg-primary/10 text-primary px-2 py-1 rounded"
+              <Card className="w-full overflow-hidden bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                  {/* Project Image Carousel - Takes full width on mobile, half on desktop */}
+                  <div className="relative order-1 lg:order-1 p-4">
+                    <Carousel className="w-full">
+                      <CarouselContent className="ml-0">
+                        {project.images.map((image, imageIndex) => (
+                          <CarouselItem key={imageIndex} className="pl-0">
+                            <div className="aspect-[16/10] lg:aspect-[4/3] overflow-hidden bg-muted rounded-lg shadow-md">
+                              <img 
+                                src={image} 
+                                alt={`${project.title} screenshot ${imageIndex + 1}`} 
+                                className="w-full h-full object-contain lg:object-cover transition-transform duration-300 group-hover:scale-105 bg-white"
+                                loading="lazy"
+                              />
+                            </div>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      {project.images.length > 1 && (
+                        <>
+                          <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/95 hover:bg-background border-border/50 hover:border-primary/50 h-10 w-10 shadow-lg" />
+                          <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/95 hover:bg-background border-border/50 hover:border-primary/50 h-10 w-10 shadow-lg" />
+                        </>
+                      )}
+                    </Carousel>
+                    
+                    {/* Project Status Badge */}
+                    <div className="absolute top-6 left-6">
+                      <Badge 
+                        variant={project.status === "Live" ? "default" : "secondary"}
+                        className={`text-sm font-medium px-3 py-1 shadow-md ${
+                          project.status === "Live" 
+                            ? "bg-green-500/20 text-green-600 border-green-500/30" 
+                            : "bg-orange-500/20 text-orange-600 border-orange-500/30"
+                        }`}
                       >
-                        {tag}
-                      </span>
-                    ))}
+                        {project.status}
+                      </Badge>
+                    </div>
+
+                    {/* Image Counter */}
+                    {project.images.length > 1 && (
+                      <div className="absolute bottom-6 right-6">
+                        <Badge variant="secondary" className="bg-background/95 text-foreground shadow-md">
+                          {project.images.length} images
+                        </Badge>
+                      </div>
+                    )}
                   </div>
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                  <a 
-                    href={project.repoUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm flex items-center gap-1 text-foreground/70 hover:text-foreground transition-colors"
-                  >
-                    <Github size={16} /> Code
-                  </a>
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm flex items-center gap-1 text-foreground/70 hover:text-foreground transition-colors"
-                  >
-                    <ExternalLink size={16} /> Live Demo
-                  </a>
-                </CardFooter>
+
+                  {/* Project Content - Takes full width on mobile, half on desktop */}
+                  <div className="order-2 lg:order-2 p-8 lg:p-12 flex flex-col justify-center space-y-6">
+                    <div>
+                      <CardTitle className="text-2xl lg:text-3xl font-bold mb-4 group-hover:text-primary transition-colors">
+                        {project.title}
+                      </CardTitle>
+                      <CardDescription className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+                        {project.description}
+                      </CardDescription>
+                    </div>
+
+                    {/* Essential Integrations/Tags */}
+                    <div className="space-y-3">
+                      <h4 className="text-sm font-semibold text-foreground/90 uppercase tracking-wider">Essential Integrations:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <Badge 
+                            key={tagIndex} 
+                            variant="outline"
+                            className="text-sm font-mono bg-primary/5 text-primary border-primary/20 hover:bg-primary/10 transition-colors px-3 py-1"
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Project Links */}
+                    <div className="flex gap-4 pt-4">
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="lg"
+                        className="flex-1 group/btn border-border/50 hover:border-primary/50 h-12"
+                      >
+                        <a 
+                          href={project.repoUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-3"
+                        >
+                          <Github size={20} className="group-hover/btn:text-primary transition-colors" />
+                          <span className="font-medium">View Code</span>
+                        </a>
+                      </Button>
+                      
+                      <Button
+                        asChild
+                        size="lg"
+                        className="flex-1 bg-primary hover:bg-primary/90 h-12"
+                        disabled={project.liveUrl === "#"}
+                      >
+                        <a 
+                          href={project.liveUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center gap-3"
+                        >
+                          <ExternalLink size={20} />
+                          <span className="font-medium">Live Demo</span>
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
               </Card>
             </motion.div>
           ))}
