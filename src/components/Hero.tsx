@@ -25,7 +25,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Near Full-Stack Developer
+              Full-Stack Developer
             </motion.div>
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance"

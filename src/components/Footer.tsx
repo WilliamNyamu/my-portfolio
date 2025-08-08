@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <a href="#" className="text-xl font-bold text-gradient-blue">
-              Dev<span className="text-foreground">Nyamu</span>
+              Dev<span className="text-foreground">Will</span>
             </a>
             <p className="text-sm text-foreground/60 mt-4 max-w-md">
               Near Full-stack developer passionate about creating beautiful, functional, 

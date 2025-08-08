@@ -6,8 +6,8 @@ import William from "@/assets/me.jpg";
 const About = () => {
   const skills = [
     { name: "Frontend Development", icon: <Layout className="w-5 h-5" />, description: "Crafting responsive and intuitive interfaces with React, Vite, and tailwind CSS" },
-    { name: "Backend Development [In progress]", icon: <Database className="w-5 h-5" />, description: "Building robust services using Django, PostGreSql" },
-    { name: "Web Design", icon: <Code className="w-5 h-5" />, description: "Creating beautiful, accessible, and performance-focused web experiences" },
+    { name: "Backend Development", icon: <Database className="w-5 h-5" />, description: "Building robust services using Django, PostGreSql" },
+    { name: "Digital & Social Media Marketing", icon: <Code className="w-5 h-5" />, description: "Driving growth through targeted campaigns and analytics" },
     { name: "Generative AI", icon: <Terminal className="w-5 h-5" />, description: "Skilled in prompt engineering, effectively making the best use of the open-sourced AI services" },
   ];
 
@@ -49,7 +49,7 @@ const About = () => {
             <h3 className="text-2xl font-bold">Who am I</h3>
             <p className="text-foreground/80">
               I'm a passionate full-stack developer with a strong focus on creating 
-              clean, efficient, and user-friendly applications. With 1+ years 
+              clean, efficient, and user-friendly applications. With 2+ years 
               in web development, I've worked on a diverse range of projects 
               from Single Page Applications to Full Web Applications.
             </p>
@@ -62,11 +62,11 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="text-center p-3 bg-secondary/50 rounded-lg">
-                <span className="block text-3xl font-bold text-primary">1+</span>
+                <span className="block text-3xl font-bold text-primary">2+</span>
                 <span className="text-sm text-foreground/80">Years Experience</span>
               </div>
               <div className="text-center p-3 bg-secondary/50 rounded-lg">
-                <span className="block text-3xl font-bold text-primary">15+</span>
+                <span className="block text-3xl font-bold text-primary">25+</span>
                 <span className="text-sm text-foreground/80">Projects Completed</span>
               </div>
             </div>

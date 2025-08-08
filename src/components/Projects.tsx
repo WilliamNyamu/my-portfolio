@@ -5,6 +5,20 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Safari3 from "@/assets/safari3.png";
+import Safari from "@/assets/safari.png";
+import Safari2 from "@/assets/safari2.png";
+import Safari4 from "@/assets/safari4.png";
+import Keja1 from "@/assets/keja1.png";
+import Keja2 from "@/assets/keja2.png";
+import Keja3 from "@/assets/keja3.png";
+import CU1 from "@/assets/cu1.png";
+import CU2 from "@/assets/cu2.png";
+import CU3 from "@/assets/cu3.png";
+import CU4 from "@/assets/cu4.png";
+import AI1 from "@/assets/ai1.png";
+import AI2 from "@/assets/ai2.png";
+import AI4 from "@/assets/ai4.png";
 import Resiato from "@/assets/Resiato.jpg";
 import lkccu from "@/assets/lkccu.jpg";
 import reverse from "@/assets/reverse.jpg";
@@ -14,31 +28,40 @@ import William from "@/assets/William.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Church Fundraising Platform",
-      description: "A comprehensive fundraising platform featuring personalized card generation, donation tracking, and community engagement tools for churches and religious organizations.",
-      tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "MongoDB"],
-      images: [lkccu, me, William], // Multiple screenshots
+      title: "SafariKenya Travel Website",
+      description: "A comprehensive travel platform featuring personalized itineraries, booking management, and local experiences for travelers in Kenya.",
+      tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "Admin Dashboard"],
+      images: [ Safari, Safari2, Safari3, Safari4], // Multiple screenshots
       repoUrl: "https://github.com/WilliamNyamu/church-fundraiser",
       liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
       status: "Live"
     },
     {
-      title: "Student Leadership Campaign Website",
-      description: "An elegant and responsive campaign website designed for student leadership elections, featuring interactive elements and modern design principles.",
-      tags: ["TypeScript", "React", "Vite", "TailwindCSS", "Framer Motion"],
-      images: [Resiato, William, me], // Multiple screenshots
-      repoUrl: "https://github.com/WilliamNyamu/governor-resiato",
-      liveUrl: "https://governor-tammary-resiato.netlify.app/",
+      title: "KejaConnect Website",
+      description: "A rental website for connecting landlords and tenants in Kenya.",
+      tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "MongoDB"],
+      images: [Keja1, Keja2, Keja3], // Multiple screenshots
+      repoUrl: "https://github.com/WilliamNyamu/church-fundraiser",
+      liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
       status: "Live"
     },
     {
-      title: "AI-Powered Discipleship Platform",
+      title: "AI-powered e-learning platform",
+      description: "An e-learning platform designed to train and equip rural youth with AI skills and literacy.",
+      tags: ["AI", "React", "Vite", "TailwindCSS", "Student Dashboard"],
+      images: [AI1, AI2, AI4], // Multiple screenshots
+      repoUrl: "https://github.com/WilliamNyamu/governor-resiato",
+      liveUrl: "https://governor-tammary-resiato.netlify.app/",
+      status: "In development"
+    },
+    {
+      title: "Church Web Application",
       description: "An innovative Christian discipleship platform integrating AI capabilities with gamification elements to enhance spiritual growth and community engagement.",
       tags: ["TypeScript", "Next.js", "PostgreSQL", "OpenAI API", "TailwindCSS", "Prisma"],
-      images: [reverse, lkccu, Resiato], // Multiple screenshots
+      images: [CU1, CU2, CU3, CU4], // Multiple screenshots
       repoUrl: "https://github.com/WilliamNyamu/discipleship-platform",
       liveUrl: "#",
-      status: "In Development"
+      status: "Live"
     },
   ];
 
@@ -162,7 +185,7 @@ const Projects = () => {
                     </div>
 
                     {/* Project Links */}
-                    <div className="flex gap-4 pt-4">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
                       <Button
                         asChild
                         variant="outline"
