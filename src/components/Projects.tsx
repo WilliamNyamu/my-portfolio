@@ -32,8 +32,8 @@ const Projects = () => {
       description: "A comprehensive travel platform featuring personalized itineraries, booking management, and local experiences for travelers in Kenya.",
       tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "Admin Dashboard"],
       images: [ Safari, Safari2, Safari3, Safari4], // Multiple screenshots
-      repoUrl: "https://github.com/WilliamNyamu/church-fundraiser",
-      liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
+      repoUrl: "https://github.com/WilliamNyamu/kenya-travel-elegance",
+      liveUrl: "https://safari-travel.netlify.app/",
       status: "Live"
     },
     {
@@ -41,8 +41,8 @@ const Projects = () => {
       description: "A rental website for connecting landlords and tenants in Kenya.",
       tags: ["React", "Node.js", "TailwindCSS", "MPesa API", "MongoDB"],
       images: [Keja1, Keja2, Keja3], // Multiple screenshots
-      repoUrl: "https://github.com/WilliamNyamu/church-fundraiser",
-      liveUrl: "https://lkccu-fundraiser-card-generator.netlify.app/",
+      repoUrl: "https://github.com/WilliamNyamu/rent-ready-showcase",
+      liveUrl: "https://kejaconnect.netlify.app/",
       status: "Live"
     },
     {
@@ -50,8 +50,8 @@ const Projects = () => {
       description: "An e-learning platform designed to train and equip rural youth with AI skills and literacy.",
       tags: ["AI", "React", "Vite", "TailwindCSS", "Student Dashboard"],
       images: [AI1, AI2, AI4], // Multiple screenshots
-      repoUrl: "https://github.com/WilliamNyamu/governor-resiato",
-      liveUrl: "https://governor-tammary-resiato.netlify.app/",
+      repoUrl: "https://github.com/WilliamNyamu/AIM",
+      liveUrl: "https://ai-mashinani-dev.web.app/",
       status: "In development"
     },
     {
@@ -59,8 +59,8 @@ const Projects = () => {
       description: "An innovative Christian discipleship platform integrating AI capabilities with gamification elements to enhance spiritual growth and community engagement.",
       tags: ["TypeScript", "Next.js", "PostgreSQL", "OpenAI API", "TailwindCSS", "Prisma"],
       images: [CU1, CU2, CU3, CU4], // Multiple screenshots
-      repoUrl: "https://github.com/WilliamNyamu/discipleship-platform",
-      liveUrl: "#",
+      repoUrl: "https://github.com/WilliamNyamu/lkccu",
+      liveUrl: "https://lkccu-33af2.web.app/",
       status: "Live"
     },
   ];
