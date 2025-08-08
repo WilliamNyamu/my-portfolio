@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Code, Layout, Database, Terminal } from "lucide-react";
-import William from "@/assets/me.jpg";
+import William from "@/assets/William.jpg";
 
 const About = () => {
   const skills = [
@@ -138,15 +138,15 @@ const About = () => {
               <div className="marquee-content inline-flex space-x-8">
                 {[
                   "JavaScript", "TypeScript", "React", "Node.js",
-                  "HTML5", "Django", "Tailwind CSS", "Git", 
-                  "Python",  "Next.js", "Kotlin", "Android Development"
+                  "AI", "Django", "Tailwind CSS", "Git", 
+                  "Python",  "Next.js", "Digital Marketing", "Social Media Marketing"
                 ].map((tech, index) => (
                   <span key={index} className="text-sm font-mono bg-secondary/50 px-3 py-1 rounded-md">{tech}</span>
                 ))}
                 {[
                   "JavaScript", "TypeScript", "React", "Node.js",
-                  "HTML5", "Django", "Tailwind CSS", "Git", 
-                  "Python",  "Next.js", "Kotlin", "Android Development"
+                  "AI", "Django", "Tailwind CSS", "Git", 
+                  "Python",  "Next.js", "Digital Marketing", "Social Media Marketing"
                 ].map((tech, index) => (
                   <span key={`dup-${index}`} className="text-sm font-mono bg-secondary/50 px-3 py-1 rounded-md">{tech}</span>
                 ))}
