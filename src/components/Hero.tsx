@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
@@ -25,7 +24,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              Full-Stack Developer
+              AI Governance • Tech Policy • Law
             </motion.div>
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance"
@@ -33,7 +32,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Crafting digital <span className="text-gradient-blue">experiences</span> that matter
+              Shaping <span className="text-gradient-blue">AI's Africa</span> Moment
             </motion.h1>
             <motion.p 
               className="text-lg text-foreground/80 mt-6 max-w-lg"
@@ -41,7 +40,15 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              I'm a developer who combines technical expertise with design thinking to build exceptional digital products.
+              Tech innovator and law student at the intersection of law, technology, and policy—championing AI sovereignty, responsible innovation, and the glocalisation of AI frameworks for Africa's transformation.
+            </motion.p>
+            <motion.p 
+              className="text-base text-foreground/60 italic max-w-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.55 }}
+            >
+              "It is not just Africa's AI moment, but AI's Africa moment."
             </motion.p>
           </div>
           
@@ -59,7 +66,7 @@ const Hero = () => {
                 document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
-              View My Work
+              Explore My Work
             </a>
             <a 
               href="#about" 
@@ -69,7 +76,7 @@ const Hero = () => {
                 document.querySelector("#about")?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
-              About Me
+              My Journey
             </a>
           </motion.div>
           
@@ -113,8 +120,8 @@ const Hero = () => {
           <div className="glass-panel rounded-2xl p-4 relative z-10">
             <div className="aspect-[4/3] rounded-lg overflow-hidden bg-secondary/50">
               <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-                alt="Code on screen" 
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" 
+                alt="AI and technology representing the future of innovation" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
