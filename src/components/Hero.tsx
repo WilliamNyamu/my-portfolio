@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import William from "/images/journey/William Nyamu.jpg";
 
 const Hero = () => {
   return (
@@ -103,7 +104,7 @@ const Hero = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:billyliam08@gmail.com"
+              href="mailto:williamnyamu08@gmail.com"
               className="text-foreground/60 hover:text-foreground transition-colors"
             >
               <Mail size={20} />
@@ -120,7 +121,7 @@ const Hero = () => {
           <div className="glass-panel rounded-2xl p-4 relative z-10">
             <div className="aspect-[4/3] rounded-lg overflow-hidden bg-secondary/50">
               <img 
-                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" 
+                src={William}
                 alt="AI and technology representing the future of innovation" 
                 className="w-full h-full object-cover"
                 loading="lazy"

@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Scale, Globe, Lightbulb, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import William from "@/assets/William.jpg";
+import William from "/images/index/advocacy.jpg";
 
 const About = () => {
   return (
