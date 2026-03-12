@@ -12,9 +12,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <div className="section-divider" />
+      {/* <div className="section-divider" />
       <Projects />
-      <div className="section-divider" />
+      <div className="section-divider" /> */}
       <Contact />
       <Footer />
     </div>

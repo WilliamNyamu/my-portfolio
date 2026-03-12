@@ -27,7 +27,7 @@ const journeyContent = [
     title: "Founder, Starehe Coding Club, Starehe Boys' Centre ",
     badge: "Pioneering AI Literacy & Advocacy",
     period: "Aug 2022 - Nov 2023",
-    image: "/images/journey/hack25.jpg",
+    image: "/images/index/advocacy.jpg",
     description: (
       <>
         <p>
@@ -48,7 +48,6 @@ const journeyContent = [
     title: "Founder, AIM (AI Mashinani)",
     badge: "Bridging the Digital Divide in Rural Kenya",
     period: "June 2024 - Present",
-    image: "/images/journey/hack25.jpg",
     description: (
       <>
         <p>
@@ -90,7 +89,7 @@ const journeyContent = [
     title: "Publicity Lead, Marketing Students Association, UoN",
     badge: "Bridging Strategy with Creativity",
     period: "May 2025 - Present",
-    image: "/images/journey/hack25.jpg",
+    image: "/images/journey/nyamu copy.jpg",
     description: (
       <>
         <p>
@@ -114,6 +113,68 @@ const journeyContent = [
   
   
   
+];
+
+const educationContent = [
+  {
+    title: "Bachelor of Law",
+    institution: "University of Nairobi",
+    period: "Aug 2024 - April 2028",
+    description: (
+      <>
+        <p>
+          Pursuing a comprehensive legal education at Kenya's premier institution, building a strong foundation in 
+          <strong> law and different legal disciplines</strong>. Engaging with diverse 
+          legal disciplines to develop a well-rounded understanding of the Kenyan and global legal landscape.
+        </p>
+        <br />
+        <p>
+          Driven by a vision to bridge <strong>Law, Policy, and Technology</strong>, actively exploring the intersection 
+          of legal frameworks and emerging technologies to drive meaningful, transformative impact in communities across Africa.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "ALX Backend & Pro-Dev Backend Engineering",
+    institution: "ALX Africa",
+    period: "Mar 2025 - Feb 2026",
+    description: (
+      <>
+        <p>
+          Developing deep <strong>problem-solving skills</strong> and technical training in developing and managing 
+          <strong> scalable and reliable backend systems</strong> and infrastructure. Gained skills in advanced python programming, django framework, database management, and cloud computing, with a focus on building robust backend solutions that can support the demands of modern applications and services.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "ALX Artificial Intelligence and Career Essentials",
+    institution: "ALX Africa",
+    period: "Feb 2024 - April 2024",
+    description: (
+      <>
+        <p>
+          Gained understanding into <strong>generative AI</strong>, and leveraging it to improve workflow and 
+          productivity. Learnt different <strong>AI tools</strong> and various <strong>prompting techniques</strong> in genAI.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Full Stack Software Development",
+    institution: "eMobilis Software Training Institute",
+    period: "Jan 2024 - May 2024",
+    description: (
+      <>
+        <p>
+          Built a strong foundation in <strong>full stack web development</strong>, gaining hands-on experience with 
+          both <strong>frontend and backend technologies</strong>. Developed practical skills in building responsive 
+          user interfaces and robust server-side applications.
+        </p>
+      </>
+    ),
+  },
 ];
 
 const Journey = () => {
@@ -184,6 +245,50 @@ const Journey = () => {
                         className="rounded-lg mb-6 object-cover w-full h-48 md:h-72"
                       />
                     )}
+                    {item.description}
+                  </div>
+                </motion.div>
+              ))}
+
+              {/* Education Section */}
+              <motion.div 
+                className="mt-16 mb-10"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="flex flex-col items-center gap-3 mb-8">
+                  <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    Education
+                  </span>
+                  <h2 className="font-bold text-2xl md:text-3xl text-center">Academic Qualifications</h2>
+                  <div className="w-16 h-1 bg-primary mx-auto"></div>
+                </div>
+              </motion.div>
+
+              {educationContent.map((item, index) => (
+                <motion.div 
+                  key={`education-${index}`} 
+                  className="mb-10 mt-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <h2 className="bg-emerald-500 text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+                    {item.institution}
+                  </h2>
+
+                  <p className={twMerge("text-xl font-semibold mb-2")}>
+                    {item.title}
+                  </p>
+                  
+                  <p className="text-sm text-foreground/60 mb-4">
+                    {item.period}
+                  </p>
+
+                  <div className="text-sm prose prose-sm dark:prose-invert text-foreground/80">
                     {item.description}
                   </div>
                 </motion.div>

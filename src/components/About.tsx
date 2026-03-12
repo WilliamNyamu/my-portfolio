@@ -1,10 +1,23 @@
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Scale, Globe, Lightbulb, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import William from "/images/index/advocacy.jpg";
+import { useState, useEffect } from "react";
 
 const About = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    "/images/index/advocacy.jpg",
+    "/images/index/speech.jpg",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="about" className="section py-20 md:py-28">
       <div className="section-container">
@@ -49,13 +62,18 @@ const About = () => {
           >
             <div className="glass-panel rounded-2xl p-4 relative z-10">
               <div className="aspect-square rounded-lg overflow-hidden bg-secondary/50">
-                <img 
-                  src= {William} 
-                  alt="William Nyamu" 
-                  className="w-full h-full object-fit"
-                  style={{ objectPosition: "center", objectFit: "cover" }}
-                  loading="lazy"
-                />
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={currentImageIndex}
+                    src={images[currentImageIndex]}
+                    alt="William Nyamu"
+                    className="w-full h-full object-cover"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </AnimatePresence>
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 w-full h-full bg-primary/10 rounded-2xl -z-10"></div>

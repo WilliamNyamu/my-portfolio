@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navLinks = [
     { title: "About", href: "#about" },
-    { title: "Projects", href: "#projects" },
+    { title: "My Journey", href: "/journey" },
     { title: "Contact", href: "#contact" },
   ];
 
@@ -48,7 +48,7 @@ const Navbar = () => {
           }}
           className="text-xl font-bold text-gradient-blue"
         >
-          Dev<span className="text-foreground">Will</span>
+          Just<span className="text-foreground">Will</span>
         </a>
         
         {/* Desktop Navigation */}
@@ -69,7 +69,7 @@ const Navbar = () => {
               {link.title}
             </motion.a>
           ))}
-          <motion.a
+          {/* <motion.a
             href="mailto:contact@example.com"
             className="px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-md border border-primary/30 transition-all"
             initial={{ opacity: 0 }}
@@ -77,7 +77,7 @@ const Navbar = () => {
             transition={{ duration: 0.3, delay: 0.4 }}
           >
             Get In Touch
-          </motion.a>
+          </motion.a> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -112,12 +112,12 @@ const Navbar = () => {
               {link.title}
             </a>
           ))}
-          <a
-            href="mailto:billyliam08@gmail.com"
+          {/* <a
+            href="mailto:williamnyamu08@gmail.com"
             className="mt-4 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary text-center rounded-md border border-primary/30"
           >
             Get In Touch
-          </a>
+          </a> */}
         </div>
       </motion.div>
     </header>

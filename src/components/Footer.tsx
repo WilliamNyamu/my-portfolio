@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <a href="#" className="text-xl font-bold text-gradient-blue">
-              Dev<span className="text-foreground">Will</span>
+              Just<span className="text-foreground">Will</span>
             </a>
             <p className="text-sm text-foreground/60 mt-4 max-w-md">
-              Near Full-stack developer passionate about creating beautiful, functional, 
-              and user-friendly applications that solve real-world problems.
-            </p>
+                    Near Full-stack developer passionate about AI governance, tech policy, 
+                    and building responsible solutions that create positive impact.
+                  </p>
           </div>
           
           <div className="flex flex-col items-start md:items-end gap-4">
@@ -35,15 +35,7 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary/50 text-foreground/60 hover:text-foreground hover:bg-primary/20 transition-colors"
-              >
-                <Twitter size={18} />
-              </a>
-              <a 
-                href="mailto:billyliam08@gmail.com"
+                href="mailto:williamnyamu08@gmail.com"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-secondary/50 text-foreground/60 hover:text-foreground hover:bg-primary/20 transition-colors"
               >
                 <Mail size={18} />
