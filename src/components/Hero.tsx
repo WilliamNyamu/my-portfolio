@@ -60,21 +60,21 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
           >
             <a 
-              href="#projects" 
+              href="#contact" 
               className="px-6 py-3 bg-primary hover:bg-primary/90 text-foreground rounded-lg transition-all glow-on-hover"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
-              Explore My Work
+              Let's Collaborate
             </a>
             <a 
-              href="#about" 
+              href="/journey" 
               className="px-6 py-3 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg border border-white/10 transition-all"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector("#about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                document.querySelector("/journey")?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
             >
               My Journey
