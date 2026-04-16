@@ -14,11 +14,11 @@ const journeyContent = [
     description: (
       <>
         <p>
-          Volunteered as a <strong>Google Workspace Support Analyst</strong> at the High Court during third form, where I supported the <strong>HR Department</strong> in optimizing their data-driven workflows and digital operations.
+          Volunteered as a <u>Google Workspace Support Analyst</u> at the High Court during third form, where I supported the <u>HR Department</u> in optimizing their data-driven workflows and digital operations.
         </p>
         <br />
         <p>
-          This experience served as the <strong>foundation of my journey</strong> at the intersection of law and technology, sparking a deep interest in how digital tools can enhance efficiency within <strong>legal institutions</strong>.
+          This experience served as the <u>foundation of my journey</u> at the intersection of law and technology, sparking a deep interest in how digital tools can enhance efficiency within <u>legal institutions</u>.
         </p>
       </>
     ),
@@ -31,15 +31,15 @@ const journeyContent = [
     description: (
       <>
         <p>
-          Through Starehe Boys' Centre, forged <strong>strategic partnerships with Safaricom PLC and Kodris Africa</strong> to conceptualize and launch one of the first AI and coding clubs in a Kenyan public high school, opening doors for students to engage with emerging technologies at an early age.
+          Through Starehe Boys' Centre, forged <u>strategic partnerships with Safaricom PLC and Kodris Africa</u> to conceptualize and launch one of the first AI and coding clubs in a Kenyan public high school, opening doors for students to engage with emerging technologies at an early age.
         </p>
         <br />
         <p>
-          The initiative garnered <strong>national recognition</strong>, earning high commendation from <strong>His Excellency, President Dr. William Ruto</strong>, who lauded it as a landmark milestone in advancing education and technology in Kenya.
+          The initiative garnered <u>national recognition</u>, earning high commendation from <u>His Excellency, President Dr. William Ruto</u>, who lauded it as a landmark milestone in advancing education and technology in Kenya.
         </p>
         <br />
         <p>
-          Building on this momentum, further championed the cause of early digital and AI literacy by taking the stage at the <strong>2022 Jamhuri Tech Summit</strong>, advocating for the integration of technology education into the foundations of Kenya's learning institutions.
+          Building on this momentum, further championed the cause of early digital and AI literacy by taking the stage at the <u>2022 Jamhuri Tech Summit</u>, advocating for the integration of technology education into the foundations of Kenya's learning institutions.
         </p>
       </>
     ),
@@ -51,15 +51,15 @@ const journeyContent = [
     description: (
       <>
         <p>
-          Driven by a commitment to <strong>bridging the digital divide</strong> within Kenya, pioneered <strong>AI Mashinani</strong> — a grassroots initiative designed to bring AI and digital literacy directly to underserved communities.
+          Driven by a commitment to <u>bridging the digital divide</u> within Kenya, pioneered <u>AI Mashinani</u> — a grassroots initiative designed to bring AI and digital literacy directly to underserved communities.
         </p>
         <br />
         <p>
-          Through strategic partnerships with <strong>local polytechnics</strong>, the program took root in <strong>Kiambatha Village, Kirinyaga County</strong>, creating a platform where technology education was made accessible to those far removed from the country's digital mainstream.
+          Through strategic partnerships with <u>local polytechnics</u>, the program took root in <u>Kiambatha Village, Kirinyaga County</u>, creating a platform where technology education was made accessible to those far removed from the country's digital mainstream.
         </p>
         <br />
         <p>
-          Spearheaded the organization of hands-on workshops that equipped <strong>5 local teachers and approximately 60 students</strong> with practical skills in <strong>Generative AI, Google Workspace Tools, and Internet Safety & Data Privacy</strong> — empowering both educators and learners to confidently navigate and harness the opportunities of an increasingly digital world.
+          Spearheaded the organization of hands-on workshops that equipped <u>5 local teachers and approximately 60 students</u> with practical skills in <u>Generative AI, Google Workspace Tools, and Internet Safety & Data Privacy</u> — empowering both educators and learners to confidently navigate and harness the opportunities of an increasingly digital world.
         </p>
       </>
     ),
@@ -72,15 +72,15 @@ const journeyContent = [
     description: (
       <>
         <p>
-          Conceptualized and organized <strong>#HACK25NAIROBI</strong>, a high-energy 3-day AI hackathon that united over <strong>120 students</strong> alongside ministry and marketplace leaders — marking a remarkable <strong>35% surge in turnout</strong> from its predecessor, #HACK24 in 2024, reflecting the growing momentum and impact of the initiative.
+          Conceptualized and organized <u>#HACK25NAIROBI</u>, a high-energy 3-day AI hackathon that united over <u>120 students</u> alongside ministry and marketplace leaders — marking a remarkable <u>35% surge in turnout</u> from its predecessor, #HACK24 in 2024, reflecting the growing momentum and impact of the initiative.
         </p>
         <br />
         <p>
-          To bring the vision to life, spearheaded fundraising efforts in collaboration with <strong>YFC Kenya and Life Ministry</strong>, successfully mobilizing over <strong>$1,000</strong> to cover hackathon logistics and ensure a seamless experience for all participants.
+          To bring the vision to life, spearheaded fundraising efforts in collaboration with <u>YFC Kenya and Life Ministry</u>, successfully mobilizing over <u>$1,000</u> to cover hackathon logistics and ensure a seamless experience for all participants.
         </p>
         <br />
         <p>
-          Demonstrating strong partnership-building acumen, led a team in securing collaborations with global organizations <strong>YouVersion and The Chosen</strong>, creating an environment that inspired innovation and culminated in <strong>15 meaningful project submissions</strong> from participants eager to apply AI in purposeful, real-world contexts.
+          Demonstrating strong partnership-building acumen, led a team in securing collaborations with global organizations <u>YouVersion and The Chosen</u>, creating an environment that inspired innovation and culminated in <u>15 meaningful project submissions</u> from participants eager to apply AI in purposeful, real-world contexts.
         </p>
       </>
     ),
@@ -93,19 +93,19 @@ const journeyContent = [
     description: (
       <>
         <p>
-          As a law student serving on the <strong>Executive Board of the Marketing Students Association (MSA)</strong>, brought a unique interdisciplinary perspective to the role by bridging legal and technical insight with marketing strategy.
+          As a law student serving on the <u>Executive Board of the Marketing Students Association (MSA)</u>, brought a unique interdisciplinary perspective to the role by bridging legal and technical insight with marketing strategy.
         </p>
         <br />
         <p>
-          Drove a <strong>15% boost in LinkedIn engagement and following</strong> through intentional, strategic content creation and active community management that resonated with a growing audience.
+          Drove a <u>15% boost in LinkedIn engagement and following</u> through intentional, strategic content creation and active community management that resonated with a growing audience.
         </p>
         <br />
         <p>
-          Spearheaded a landmark collaboration with the <strong>International School of Advertising and AIESEC</strong>, culminating in a dynamic 3-day bootcamp that immersed students in the worlds of marketing and advertising.
+          Spearheaded a landmark collaboration with the <u>International School of Advertising and AIESEC</u>, culminating in a dynamic 3-day bootcamp that immersed students in the worlds of marketing and advertising.
         </p>
         <br />
         <p>
-          Further strengthened MSA's digital footprint through hands-on website management and consistent social media engagement, efforts that translated into a tangible <strong>10% growth in membership</strong> and a more connected, vibrant student community.
+          Further strengthened MSA's digital footprint through hands-on website management and consistent social media engagement, efforts that translated into a tangible <u>10% growth in membership</u> and a more connected, vibrant student community.
         </p>
       </>
     ),
@@ -117,19 +117,19 @@ const journeyContent = [
 
 const educationContent = [
   {
-    title: "Bachelor of Law",
+    title: "Bachelor of Laws, LLB",
     institution: "University of Nairobi",
     period: "Aug 2024 - April 2028",
     description: (
       <>
         <p>
-          Pursuing a comprehensive legal education at Kenya's premier institution, building a strong foundation in 
-          <strong> law and different legal disciplines</strong>. Engaging with diverse 
+          Pursuing a comprehensive legal education at Kenya's premier institution, building a strong foundation in  
+          <u> law and different legal disciplines</u>. Engaging with diverse 
           legal disciplines to develop a well-rounded understanding of the Kenyan and global legal landscape.
         </p>
         <br />
         <p>
-          Driven by a vision to bridge <strong>Law, Policy, and Technology</strong>, actively exploring the intersection 
+          Driven by a vision to bridge <u>Law, Policy, and Technology</u>, actively exploring the intersection 
           of legal frameworks and emerging technologies to drive meaningful, transformative impact in communities across Africa.
         </p>
       </>
@@ -142,8 +142,8 @@ const educationContent = [
     description: (
       <>
         <p>
-          Developing deep <strong>problem-solving skills</strong> and technical training in developing and managing 
-          <strong> scalable and reliable backend systems</strong> and infrastructure. Gained skills in advanced python programming, django framework, database management, and cloud computing, with a focus on building robust backend solutions that can support the demands of modern applications and services.
+          Developing deep <u>problem-solving skills</u> and technical training in developing and managing 
+          <u>scalable and reliable backend systems</u> and infrastructure. Gained skills in advanced python programming, django framework, database management, and cloud computing, with a focus on building robust backend solutions that can support the demands of modern applications and services.
         </p>
       </>
     ),
@@ -155,8 +155,8 @@ const educationContent = [
     description: (
       <>
         <p>
-          Gained understanding into <strong>generative AI</strong>, and leveraging it to improve workflow and 
-          productivity. Learnt different <strong>AI tools</strong> and various <strong>prompting techniques</strong> in genAI.
+          Gained understanding into <u>generative AI</u>, and leveraging it to improve workflow and 
+          productivity. Learnt different <u>AI tools</u> and various <u>prompting techniques</u> in genAI.
         </p>
       </>
     ),
@@ -168,8 +168,8 @@ const educationContent = [
     description: (
       <>
         <p>
-          Built a strong foundation in <strong>full stack web development</strong>, gaining hands-on experience with 
-          both <strong>frontend and backend technologies</strong>. Developed practical skills in building responsive 
+          Built a strong foundation in <u>full stack web development</u>, gaining hands-on experience with 
+          both <u>frontend and backend technologies</u>. Developed practical skills in building responsive 
           user interfaces and robust server-side applications.
         </p>
       </>

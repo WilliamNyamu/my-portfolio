@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,6 +32,8 @@ const Navbar = () => {
     }
   };
 
+  const isSectionLink = (href: string) => href.startsWith("#");
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -54,20 +57,32 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link, index) => (
-            <motion.a
+            <motion.div
               key={index}
-              href={link.href}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
-              className="nav-link text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              {link.title}
-            </motion.a>
+              {isSectionLink(link.href) ? (
+                <a
+                  href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(link.href);
+                  }}
+                  className="nav-link text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <Link
+                  to={link.href}
+                  className="nav-link text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                >
+                  {link.title}
+                </Link>
+              )}
+            </motion.div>
           ))}
           {/* <motion.a
             href="mailto:contact@example.com"
@@ -100,17 +115,28 @@ const Navbar = () => {
       >
         <div className="flex flex-col p-6 space-y-6">
           {navLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
-              className="text-foreground/80 hover:text-foreground py-2 border-b border-white/10"
-            >
-              {link.title}
-            </a>
+            isSectionLink(link.href) ? (
+              <a
+                key={index}
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.href);
+                }}
+                className="text-foreground/80 hover:text-foreground py-2 border-b border-white/10"
+              >
+                {link.title}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-foreground/80 hover:text-foreground py-2 border-b border-white/10"
+              >
+                {link.title}
+              </Link>
+            )
           ))}
           {/* <a
             href="mailto:williamnyamu08@gmail.com"

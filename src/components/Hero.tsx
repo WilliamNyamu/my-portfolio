@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import William from "/images/journey/William Nyamu.jpg";
 
 const Hero = () => {
@@ -61,7 +62,7 @@ const Hero = () => {
           >
             <a 
               href="#contact" 
-              className="px-6 py-3 bg-primary hover:bg-primary/90 text-foreground rounded-lg transition-all glow-on-hover"
+              className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary/90 text-foreground rounded-lg transition-all glow-on-hover"
               onClick={(e) => {
                 e.preventDefault();
                 document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -69,16 +70,13 @@ const Hero = () => {
             >
               Let's Collaborate
             </a>
-            <a 
-              href="/journey" 
-              className="px-6 py-3 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg border border-white/10 transition-all"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector("/journey")?.scrollIntoView({ behavior: "smooth", block: "start" });
-              }}
+            <Link 
+              to="/journey" 
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-foreground rounded-lg transition-all glow-on-hover"
             >
               My Journey
-            </a>
+              <ArrowRight size={18} />
+            </Link>
           </motion.div>
           
           <motion.div 
